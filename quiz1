@@ -1,0 +1,14 @@
+def first_Letter_Upper(word):
+    if not word[0].isupper():
+        return False
+    else:
+        return True
+
+test_Paragraph = "Write a small code in Python Takes a paragraph and removes every word that has a capital letter in reverse"
+result = ""
+
+for w in test_Paragraph.split():
+    if not first_Letter_Upper(w):
+        result = result + w + " "
+
+print (result)
